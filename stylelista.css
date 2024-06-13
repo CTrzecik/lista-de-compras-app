@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --corFild--:#e0e0e0;
+    --corTitulo--:#FFFFFF;
+    --corBody--:#1E1E1E;
+    --corbtnsFundo--:#C7EFCF;
+    --cortag_a:#3b3c3d;
+    --corHover--:#4CAF50;
+    --corLegend--:#e0e0e0;
+    --corSombra--:#1d1c1c;
+    --corLabel--:#4CAF50;
+    --corImg--:#2E8B57;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--corBody--);
+}
+
+header > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--corTitulo--);
+    margin-top: 40px;
+    margin-left: -40px; 
+}
+
+#f_titulo,h1 {
+    color: #FFFFFF;
+    border: none;
+    margin-left: 68px;
+    margin-top: 20px;
+    
+
+}
+
+.fild {
+    width: 60vh;
+    border: 1px solid var(--corFild--);
+    margin-top: 20px;
+    background-color: #454545;
+    border-radius: 10px;
+}
+
+
+.legend {
+    color: var(--corLegend--);
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--corTitulo--);
+    margin-left: 12px;
+    padding: 5px;
+}
+
+section.itens > div.lista {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs {
+    transform: scale(1.5);
+    margin: 10px 5px 10px 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: var(--corLabel--);
+}
+
+.inputs:checked + .labelcheck {
+    color: #e92c0a;
+}
+
+input {
+    accent-color: red;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    left: 70%; 
+    top: 17%; 
+    width: 25%;
+}
+
+.a {
+    color: var(--cortag_a);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 8px;
+    margin: 7px; /* Corrigido para 'px' em vez de 'PX' */
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--corbtnsFundo--);
+    box-shadow: 1px 1px 5px var(--corSombra--);
+}
+
+.a:hover {
+    background-color: var(--corHover--);
+    color: #f5f4f1;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    margin-left: calc(50% - 1%); 
+    margin-top: -18%; 
+    padding: 25px;
+    color: var(--corImg--);
+    filter: brightness(0.8);
+}
+
+footer {
+    color: darkgrey;
+    text-align: center;
+}
