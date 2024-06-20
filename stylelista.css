@@ -100,7 +100,7 @@ input {
 }
 
 .a {
-    color: var(--cortag_a);
+    color: var(--corImg--);;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
