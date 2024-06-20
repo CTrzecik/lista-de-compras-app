@@ -110,6 +110,12 @@ input {
     text-decoration: none;
     background-color: var(--corbtnsFundo--);
     box-shadow: 1px 1px 5px var(--corSombra--);
+
+    transition:  opacity 0.4 ease;
+}
+
+.btns:hover > :not(:hover){
+    opacity: 0.4;
 }
 
 .a:hover {
