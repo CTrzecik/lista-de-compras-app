@@ -2,14 +2,16 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('app-cache').then(cache => {
             return cache.addAll([
-                '/',
+                '/app.js',
                 '/index.html',
-                '/styles.css',
-                '/script.js',
+                '/stylelista.css',
                 '/manifest.json',
-                '/path/to/icon-192x192.png',
-                '/path/to/icon-512x512.png'
-            ]);
+                'icon-192x192.png',
+                'icon-512x512.png'
+            ]).catch(error => {
+                console.error('Falha ao adicionar recursos ao cache:', error);
+                throw error;
+            });
         })
     );
 });

@@ -74,16 +74,6 @@ function gravarEstadoCheckbox(id, checked) {
 }
 
 
-document.getElementsByClassName("inputs").addEventListener('click', function() {
-
-    if (this.checked) {
-        document.querySelector('.label').classList.add('checked');
-        
-    } else {
-        document.querySelector('.label').classList.remove('checked');
-    }
-
-});
 
 
 if ('serviceWorker' in navigator) {
