@@ -111,7 +111,7 @@ input {
     background-color: var(--corbtnsFundo--);
     box-shadow: 1px 1px 5px var(--corSombra--);
 
-    transition:  opacity 0.4 ease;
+    transition:  opacity 0.4s ease;
 }
 
 .btns:hover > :not(:hover){
