@@ -1,9 +1,9 @@
 {
     "theme_color": "#417505",
     "background_color": "#000000",
-    "display": "browser",
-    "scope": "/lista-de-compras-app/",
-    "start_url": "/",
+    "display": "fullscreen",
+    "scope": "/fictional-octo-waddle/",
+    "start_url": "/fictional-octo-waddle/",
     "name": "App Lista ",
     "short_name": "SuperMercado",
     "icons": [
