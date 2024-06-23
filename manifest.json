@@ -3,7 +3,7 @@
     "background_color": "#000000",
     "display": "fullscreen",
     "scope": "/lista-de-compras-app/",
-    "start_url": "/",
+    "start_url": "/lista-de-compras-app/",
     "name": "App Lista ",
     "short_name": "SuperMercado",
     "icons": [
@@ -27,5 +27,8 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "description": "Uma aplicação para gerenciar sua lista de compras.",
+    "related_applications": [],
+    "prefer_related_applications": false
 }
