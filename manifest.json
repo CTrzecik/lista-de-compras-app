@@ -1,9 +1,9 @@
 {
     "theme_color": "#417505",
     "background_color": "#000000",
-    "display": "fullscreen",
+    "display": "browser",
     "scope": "/lista-de-compras-app/",
-    "start_url": "/lista-de-compras-app/",
+    "start_url": "/",
     "name": "App Lista ",
     "short_name": "SuperMercado",
     "icons": [
