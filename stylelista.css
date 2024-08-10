@@ -35,12 +35,28 @@ header > h1 {
 }
 
 #f_titulo,h1 {
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
     margin-left: 68px;
     margin-top: 20px;
     
 
+}
+.container-pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -40px;
+}
+.container-pesquisa > input {
+    background-color: #3b3c3d;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#barra-pesquisa::placeholder {
+    color: #fff;
 }
 
 .fild {
@@ -95,7 +111,7 @@ input {
     align-items: baseline;
     position: fixed;
     left: 70%; 
-    top: 17%; 
+    top: 25%; /* ajustado para 25% ao inves de 17%*/
     width: 25%;
 }
 
