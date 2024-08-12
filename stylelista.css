@@ -42,7 +42,36 @@ header > h1 {
     
 
 }
+.container-pesquisa{
+    display: flex;
+    margin-top: 20px;
+    margin-left: -40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    left: 45%; 
+    top: 20%; 
+    width: 25%;
+    
+    
+}
+.container-pesquisa > input {
+    background-color: #222323;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #e0e0e0;
+    display: none;
+    width: 100px;
+    text-align: center;
+    
+}
 
+#barra-pesquisa::placeholder {
+    color: #ffffff68;
+
+}
 .fild {
     width: 60vh;
     border: 1px solid var(--corFild--);
@@ -95,8 +124,20 @@ input {
     align-items: baseline;
     position: fixed;
     left: 70%; 
-    top: 17%; 
+    top: 25%; 
     width: 25%;
+}
+
+#pesquisar {
+    background: none;
+    border-radius: 30%;
+    box-shadow: none;
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-align: center;
+    width: 65px;
+   
+
 }
 
 .a {

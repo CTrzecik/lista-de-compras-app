@@ -85,3 +85,60 @@ if ('serviceWorker' in navigator) {
         console.log('Falha ao registrar o Service Worker:', error);
     });
 }
+
+
+//Barra de pesquisa v1 >>>by Caio Dev<<<
+
+    
+
+function aparecer(){
+    document.getElementById('barra-pesquisa').style.display = 'block';
+}
+function esconder(){
+    document.getElementById('barra-pesquisa').style.display = 'none';
+}
+
+document.getElementById('pesquisar').addEventListener('click', function(){
+    const displayBarraPesquisa = document.getElementById('barra-pesquisa').style.display;
+    
+    if (displayBarraPesquisa === 'none'){
+        aparecer();
+    }  else {
+        esconder();
+    }
+});
+
+
+function pesquisar(){ 
+    const termoPesquisa = document.getElementById('barra-pesquisa').value.toLowerCase(); // Recebe oque estiver escrito no input
+    const itens = document.querySelectorAll('.labelcheck');// cria um vetor que recebe todos os itens que estao na classe labecheck (usei o Labelcheck porque é uma classe que está em todos os itens)
+    let found = false;
+    
+
+    itens.forEach(function (item) { // executa os codigos a seguir para cada item do vetor
+        if (item.textContent.toLowerCase().includes(termoPesquisa)) { // compara o item com o termo de pesquisa
+            item.scrollIntoView({behavior: 'smooth', block: 'center'});// vai ate o item
+            item.style.backgroundColor = '#ffff99';
+            found = true;//o item foi encontrado
+        }else {
+            item.style.backgroundColor = '';
+        }
+
+
+
+        
+    }); 
+    
+    if(!found){ // verifica se o item foi encontrado
+            alert("Nenhum item foi encontrado!");
+        }
+
+    document.getElementById('barra-pesquisa').value = '';    
+}
+
+document.getElementById('barra-pesquisa').addEventListener('keyup', function(event){
+            if(event.key === 'Enter'){ // buscar ao precionar enter
+                esconder();
+                pesquisar();
+            }
+        });
