@@ -120,3 +120,16 @@ document.getElementById('barra-pesquisa').addEventListener('keyup', function(eve
                 pesquisar();
             }
         });
+/*---------------------------------------------------------------------
+               update v2 by Caio Dev                                         */
+
+document.getElementById('btn-hamburguer').addEventListener('click', function(){
+    let menu = document.getElementById('menu');
+    
+
+    if(menu.style.display === "flex"){
+        menu.style.display = 'none';
+    }else{
+        menu.style.display = 'flex';
+    }
+});
